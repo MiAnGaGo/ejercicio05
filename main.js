@@ -69,6 +69,7 @@ function(error,docs){
     console.log(docs);
 });
 
+//actualizacion
 User.update({_id: '5d1563add25de13280b1db6b'},{$set: {email:'secambio@ittepic.edu'}},
 function(error,docs){
     if(error){
@@ -79,6 +80,7 @@ function(error,docs){
     process.exit(0);
 });
 
+//eliminacion
 User.findByIdAndRemove({_id: '5d1563add25de13280b1db6b'},function(error,docs){
     if(error){
         console.log(error);
